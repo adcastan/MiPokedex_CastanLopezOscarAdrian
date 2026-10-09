@@ -1,4 +1,4 @@
-package castan.adrian.mipokedex_castanlopezoscaradrian
+package castan.adrian.pokedexlist
 
 import org.junit.Test
 
