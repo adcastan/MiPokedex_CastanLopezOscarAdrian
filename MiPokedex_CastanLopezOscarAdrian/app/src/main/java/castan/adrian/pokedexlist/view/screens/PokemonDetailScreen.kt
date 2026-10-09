@@ -151,21 +151,20 @@ fun PokemonDetailScreen(innerPadding: PaddingValues, pokemon: Pokemon ) {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                // Anterior Pokémon
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Image(painterResource(R.drawable.playbutton), contentDescription = "playbutton left")
                     Spacer(modifier = Modifier.width(4.dp))
                     Column {
-                        Text("🐍", fontSize = 24.sp) // Mock Arbok
-                        Text("Arbok N.º 0024", fontSize = 10.sp, color = Color.Gray)
+
+                        Text("${pokemon.number}, ${pokemon.name}", fontSize = 10.sp, color = Color.Gray)
                     }
                 }
 
-                // Siguiente Pokémon
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Column(horizontalAlignment = Alignment.End) {
-                        Text("🐹", fontSize = 24.sp) // Mock Raichu
-                        Text("Raichu N.º 0026", fontSize = 10.sp, color = Color.Gray)
+
+                        Text("${pokemon.number}, ${pokemon.name}", fontSize = 10.sp, color = Color.Gray)
+
                     }
                     Spacer(modifier = Modifier.width(4.dp))
                     Image(painterResource(R.drawable.playbutton2), contentDescription = "playbutton right")
